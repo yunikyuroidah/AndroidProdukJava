@@ -1,0 +1,63 @@
+plugins {
+    alias(libs.plugins.androidApplication)
+    id 'com.google.gms.google-services' // ✅ wajib untuk Firebase
+}
+
+android {
+    namespace 'com.example.crudproduk'
+    compileSdk 34
+
+    defaultConfig {
+        applicationId "com.example.crudproduk"
+        minSdk 24
+        targetSdk 34
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_11
+        targetCompatibility JavaVersion.VERSION_11
+    }
+}
+
+dependencies {
+    // ✅ Library bawaan (pakai version catalog dari libs.versions.toml)
+    implementation libs.appcompat
+    implementation libs.material
+    implementation libs.activity
+    implementation libs.constraintlayout
+
+
+    // ✅ Tambahkan Firebase BOM untuk sinkron versi
+    implementation platform('com.google.firebase:firebase-bom:33.3.0')
+
+    // ✅ Tambahkan Realtime Database & Storage
+    implementation 'com.google.firebase:firebase-firestore'
+    implementation 'com.google.firebase:firebase-database'
+    implementation 'com.google.firebase:firebase-storage'
+
+    // ✅ (Opsional) Analytics biar project terdaftar penuh di Firebase
+    implementation 'com.google.firebase:firebase-analytics'
+
+    // ✅ Glide untuk load foto dari URL
+    implementation 'com.github.bumptech.glide:glide:4.16.0'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.16.0'
+
+    // ✅ Jika kamu masih mau pakai Picasso juga boleh
+    // implementation libs.picasso
+
+    // ✅ Unit test
+    testImplementation 'junit:junit:4.13.2'
+    androidTestImplementation 'androidx.test.ext:junit:1.2.1'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.6.1'
+}

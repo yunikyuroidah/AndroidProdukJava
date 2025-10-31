@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "776005308981",
+    "firebase_url": "https://crudprodukapp-296e3-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "crudprodukapp-296e3",
+    "storage_bucket": "crudprodukapp-296e3.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:776005308981:android:87df7155031506acdf977c",
+        "android_client_info": {
+          "package_name": "com.example.crudproduk"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDeAvDGzHNEay8WKScXwTgXM5KGZjYovdY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

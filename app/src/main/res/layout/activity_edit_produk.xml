@@ -1,0 +1,96 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:padding="16dp"
+    android:background="#F9FAFB"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- Toolbar -->
+        <com.google.android.material.appbar.MaterialToolbar
+            android:id="@+id/toolbarEdit"
+            android:title="@string/title_edit_produk"
+            android:backgroundTint="#1976D2"
+            android:titleTextColor="@android:color/white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <!-- Preview Gambar -->
+        <ImageView
+            android:id="@+id/imgPreview"
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:layout_marginTop="12dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_menu_gallery"
+            android:contentDescription="@string/ubah_gambar" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnUbahGambar"
+            android:text="@string/ubah_gambar"
+            android:textAllCaps="false"
+            android:layout_marginTop="8dp"
+            android:backgroundTint="#1976D2"
+            android:textColor="@android:color/white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+
+        <!-- Nama Produk -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:hint="Nama Produk">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etNamaEdit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- Harga Produk -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:hint="Harga Produk">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etHargaEdit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- Nomor Produk -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:hint="Nomor Produk">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etNoEdit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- Tombol Update -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnUpdate"
+            android:text="@string/update_produk"
+            android:textAllCaps="false"
+            android:backgroundTint="#1976D2"
+            android:textColor="@android:color/white"
+            android:layout_marginTop="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+</ScrollView>

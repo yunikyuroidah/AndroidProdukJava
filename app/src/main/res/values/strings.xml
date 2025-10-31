@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">CRUD Produk</string>
+    <string name="pilih_gambar_produk">Pilih Gambar Produk</string>
+    <string name="nama_produk">Nama Produk</string>
+    <string name="harga_produk">Harga Produk</string>
+    <string name="nomor_produk">Nomor Produk</string>
+    <string name="simpan_produk">Simpan Produk</string>
+    <string name="title_delete_produk">Hapus Produk</string>
+    <string name="title_edit_produk">Edit Produk</string>
+    <string name="title_add_produk">Tambah Produk</string>
+    <string name="hapus_produk_konfirmasi_title">Hapus Produk</string>
+    <string name="hapus_produk_konfirmasi_message">Yakin ingin menghapus produk "%1$s"?</string>
+    <string name="hapus_produk_konfirmasi_positive">Ya</string>
+    <string name="hapus_produk_konfirmasi_negative">Batal</string>
+    <string name="hapus_produk_sukses">Produk berhasil dihapus</string>
+    <string name="hapus_produk_gagal">Gagal menghapus: %1$s</string>
+    <string name="produk_update_sukses">Produk berhasil diupdate</string>
+    <string name="produk_update_gagal">Gagal update: %1$s</string>
+    <string name="produk_simpan_sukses">Produk disimpan</string>
+    <string name="produk_simpan_gagal">Gagal: %1$s</string>
+    <string name="form_kosong_warning">Lengkapi semua data terlebih dahulu</string>
+    <string name="harga_invalid_warning">Harga tidak valid</string>
+    <string name="nomor_invalid_warning">Nomor produk tidak valid</string>
+    <string name="tidak_ada_koneksi">Tidak dapat terhubung ke server</string>
+    <string name="gagal_memuat_produk">Gagal memuat data: %1$s</string>
+    <string name="list_produk_kosong">Belum ada produk</string>
+    <string name="gagal_memuat_gambar">Gagal memuat gambar</string>
+    <string name="ubah_gambar">Ubah Gambar</string>
+    <string name="update_produk">Update Produk</string>
+    <string name="produk_tidak_ditemukan">Data produk tidak ditemukan</string>
+    <string name="daftar_produk">Daftar Produk</string>
+    <string name="tambah_produk">Tambah Produk</string>
+</resources>

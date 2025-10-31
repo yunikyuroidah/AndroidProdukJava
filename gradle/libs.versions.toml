@@ -1,0 +1,21 @@
+[versions]
+androidGradlePlugin = "8.7.0"
+googleGms = "4.4.2"
+firebaseFirestore = "25.1.1"
+picasso = "2.8"
+material = "1.12.0"
+appcompat = "1.7.0"
+activity = "1.9.2"
+constraintlayout = "2.2.0"
+
+[libraries]
+firebase-firestore = { module = "com.google.firebase:firebase-firestore", version.ref = "firebaseFirestore" }
+picasso = { module = "com.squareup.picasso:picasso", version.ref = "picasso" }
+material = { module = "com.google.android.material:material", version.ref = "material" }
+appcompat = { module = "androidx.appcompat:appcompat", version.ref = "appcompat" }
+activity = { module = "androidx.activity:activity", version.ref = "activity" }
+constraintlayout = { module = "androidx.constraintlayout:constraintlayout", version.ref = "constraintlayout" }
+
+[plugins]
+androidApplication = { id = "com.android.application", version.ref = "androidGradlePlugin" }
+googleGms = { id = "com.google.gms.google-services", version.ref = "googleGms" }
