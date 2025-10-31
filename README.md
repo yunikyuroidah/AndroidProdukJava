@@ -1,0 +1,54 @@
+Produk App — Firebase Firestore + Base64 Image
+
+Aplikasi Android sederhana untuk mengelola data produk (Create, Read, Update, Delete) menggunakan **Firebase Firestore**.  
+Tidak menggunakan Firebase Storage — gambar produk disimpan dalam format **Base64 string** langsung ke Firestore (cocok untuk akun Firebase gratis / Spark plan).
+
+---
+
+Fitur Utama
+
+**Tambah Produk**
+- Input nama produk, harga, nomor urut, dan pilih gambar dari galeri.  
+- Gambar otomatis dikonversi ke Base64 sebelum disimpan ke Firestore.
+
+**Tampil Daftar Produk**
+- Data produk dimuat dari koleksi Firestore `Produk`.  
+- Semua field (`namaProduk`, `harga`, `noProduk`, `fotoBase64`) ditampilkan di RecyclerView.
+
+**Edit Produk**
+- Ubah data produk dan gambar (Base64 akan diperbarui).  
+- Data lama otomatis ter-replace di Firestore.
+
+**Hapus Produk**
+- Menghapus dokumen dari Firestore berdasarkan ID produk.  
+- Tidak perlu hapus file di Storage karena gambar disimpan sebagai Base64.
+
+**Otomatis Refresh**
+- Setelah menambah, mengedit, atau menghapus produk, `MainActivity` otomatis memuat ulang data tanpa harus menutup aplikasi.
+
+---
+
+Teknologi yang Digunakan
+
+| Komponen | Teknologi |
+|-----------|------------|
+| Bahasa Pemrograman | **Java (Android)** |
+| Database | **Firebase Firestore** |
+| Penyimpanan Gambar | **Base64 Encoding (tanpa Storage)** |
+| UI Framework | **Material Design Components** |
+| Layout | ConstraintLayout + RecyclerView |
+| Build Tool | Gradle |
+| Target SDK | 34 (Android 14) |
+
+---
+
+Struktur Koleksi Firestore
+
+Firestore "CRUDProdukApp" (Database Default)
+│
+└── Produk (Collection)
+    └── (Document ID otomatis)
+        ├── fotoBase64
+        ├── harga
+        ├── namaProduk
+        └── noProduk
