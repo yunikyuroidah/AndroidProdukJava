@@ -38,15 +38,3 @@ Teknologi yang Digunakan
 | Layout | ConstraintLayout + RecyclerView |
 | Build Tool | Gradle |
 | Target SDK | 34 (Android 14) |
-
----
-
-Struktur Koleksi Firestore
-
-Database: CRUDProdukApp (Database Default)
-    Koleksi: Produk
-       Dokumen: (ID Otomatis)
-          Field: fotoBase64
-          Field: harga
-          Field: namaProduk
-          Field: noProduk
