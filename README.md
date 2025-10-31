@@ -1,7 +1,6 @@
-Produk App — Firebase Firestore + Base64 Image
+Produk App — Java + Firebase Firestore + Base64 Image
 
-Aplikasi Android sederhana untuk mengelola data produk (Create, Read, Update, Delete) menggunakan **Firebase Firestore**.  
-Tidak menggunakan Firebase Storage — gambar produk disimpan dalam format **Base64 string** langsung ke Firestore (cocok untuk akun Firebase gratis / Spark plan).
+Aplikasi Android sederhana untuk mengelola data produk (Create, Read, Update, Delete) menggunakan **Firebase Firestore**. Tidak menggunakan Firebase Storage — gambar produk disimpan dalam format **Base64 string** langsung ke Firestore (cocok untuk akun Firebase gratis / Spark plan).
 
 ---
 
@@ -44,11 +43,10 @@ Teknologi yang Digunakan
 
 Struktur Koleksi Firestore
 
-Firestore "CRUDProdukApp" (Database Default)
-│
-└── Produk (Collection)
-    └── (Document ID otomatis)
-        ├── fotoBase64
-        ├── harga
-        ├── namaProduk
-        └── noProduk
+Database: CRUDProdukApp (Database Default)
+    Koleksi: Produk
+       Dokumen: (ID Otomatis)
+          Field: fotoBase64
+          Field: harga
+          Field: namaProduk
+          Field: noProduk
